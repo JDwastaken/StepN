@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E3E2E2"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.example.myapplication.Settings">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/toolbar"
+            android:background="#E3E2E2">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/settings"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25sp">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+            app:cardCornerRadius="25dp"
+            app:cardElevation="50dp"
+            android:layout_width="354dp"
+            android:layout_height="246dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/settings_icon">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/setGoalLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="145dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/target">
+                </ImageView>
+
+                <TextView
+                        android:id="@+id/goalText"
+                        android:layout_width="202dp"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center"
+                        android:text="@string/set_goal"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="4dp"
+                    android:layout_marginStart="100dp"
+                    android:background="#E3E2E2">
+            </TextView>
+
+            <LinearLayout
+                    android:id="@+id/stepSizeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="145dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/footsteps">
+                </ImageView>
+
+                <TextView
+                        android:layout_width="202dp"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center"
+                        android:text="@string/step_size"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="4dp"
+                    android:layout_marginStart="100dp"
+                    android:background="#E3E2E2">
+            </TextView>
+
+            <LinearLayout
+                    android:id="@+id/notificationLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="145dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/notification">
+                </ImageView>
+
+                <TextView
+                        android:layout_width="202dp"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center"
+                        android:text="@string/notification"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="4dp"
+                    android:layout_marginStart="100dp"
+                    android:background="#E3E2E2">
+            </TextView>
+
+            <LinearLayout
+                    android:id="@+id/languageLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="145dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/translate">
+                </ImageView>
+
+                <TextView
+                        android:layout_width="202dp"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center"
+                        android:text="@string/language"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

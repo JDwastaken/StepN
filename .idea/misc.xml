@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Project/app/src/main/res/layout/achievement.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Project/app/src/main/res/layout/activitymain.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Project/app/src/main/res/layout/fragment_achievement.xml" value="0.10208333333333333" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Project/app/src/main/res/layout/fragment_home.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Project/app/src/main/res/layout/fragment_overview.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/Project/app/src/main/res/layout/fragment_settings.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable-anydpi/settings_icon.xml" value="0.272" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/stepn_background.xml" value="0.2635" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/stepn_logo_background.xml" value="0.2765" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/achievement.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activitymain.xml" value="0.3098958333333333" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_achievement.xml" value="0.33" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_home.xml" value="0.3098958333333333" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_overview.xml" value="0.29583333333333334" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_settings.xml" value="0.3098958333333333" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_total_steps.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_total_steps_home.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/statistics.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/step_size.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2765" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/stepn.xml" value="0.2635" />
+        <entry key="..\:/Users/phamj/AndroidStudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/stepn_logo.xml" value="0.2765" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

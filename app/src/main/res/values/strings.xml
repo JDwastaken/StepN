@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">StepN</string>
+
+    <string name="notification_setting_notice">"We can't find the settings to your Notification. Please manually find it in your Android Settings."</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="average">Average</string>
+    <string name="total">Total</string>
+    <string name="Kcal">Kcal</string>
+    <string name="notFound">Sensor Not Found</string>
+    <string name="today">TODAY</string>
+    <string name="steps_left">Steps Left</string>
+    <string name="steps">Steps</string>
+    <string name="record">Record</string>
+    <string name="total_7days">Total Steps Taken In The Last 7 Days</string>
+    <string name="average_this_week">Average Steps Taken In the Last 7 Days</string>
+    <string name="total_this_month">Total Steps Taken This Month</string>
+    <string name="average_this_month">Average Steps Taken This Month</string>
+    <string name="ok">OK</string>
+    <string name="settings">SETTINGS</string>
+    <string name="language">Change Language</string>
+    <string name="notification">Notifications</string>
+    <string name="step_size">Change Step Size</string>
+    <string name="set_goal">Set Daily Goal</string>
+    <string name="cm">cm</string>
+    <string name="ft">ft</string>
+    <string name="set_step_size">Set Step Size</string>
+    <string name="step_size_summary">Current Step Size: %1$.2f %2$s</string>
+    <string name="goal_summary">Current Goal: %,d Steps</string>
+    <string name="goal_reached_notification">You\'ve reached your daily target! %s steps and counting</string>
+    <string name="notification_text">%s steps to go</string>
+    <string name="progress_shown">Your progress will be shown here soon</string>
+    <string name="notification_title">Your steps are being counted</string>
+    <string name="achievements">ACHIEVEMENTS</string>
+    <string name="this_month">This Month</string>
+    <string name="total_steps">Total Steps</string>
+    <string name="distance">Distance</string>
+    <string name="level">Level</string>
+    <string name="more_steps_to_reach">more steps to reach next level</string>
+    <string name="levels">Overview</string>
+    <string name="more">More</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="level_4">Level 4</string>
+    <string name="level_5">Level 5</string>
+    <string name="congratulation">Congratulations</string>
+    <string name="you_have_achieved">You have achieved level</string>
+    <string name="level_1">Level 1</string>
+    <string name="more_steps_to_reach_level">more steps to reach level</string>
+    <string name="level_6">Level 6</string>
+    <string name="level_7">Level 7</string>
+    <string name="level_8">Level 8</string>
+    <string name="level_9">Level 9</string>
+    <string name="tab_1">Overview</string>
+    <string name="tab_2">Home</string>
+    <string name="tab_3">Settings</string>
+    <string name="sensor_not_found">Sensor Not Found</string>
+    <string name="sensor_notice">Your device can\'t run this app due to not having the necessary sensors to operate it</string>
+    <string name="your_progress_will_be_shown_here_soon">Your progress will be shown here soon</string>
+    <string name="overview">OVERVIEW</string>
+    <string name="total_last_7_days">Total Steps Taken In The Last 7 Days</string>
+    <string name="average_last_7_days">Average Steps Taken In The Last 7 Days</string>
+    <string name="more_steps_to_reach_next_level">more steps to reach next level</string>
+    <string name="LEVEL">LEVEL</string>
+</resources>

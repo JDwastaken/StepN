@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/you_have_achieved"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+        </TextView>
+        <Space
+                android:layout_width="5dp"
+                android:layout_height="5dp">
+        </Space>
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/textLevel"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bottom_navigation"
+            android:src="@drawable/threek">
+
+    </ImageView>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/congratulation"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold">
+    </TextView>
+    <Space
+            android:layout_width="5dp"
+            android:layout_height="5dp">
+    </Space>
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/ok"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+    </Button>
+</LinearLayout>

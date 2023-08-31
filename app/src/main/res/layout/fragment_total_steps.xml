@@ -1,0 +1,307 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.TotalSteps">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E3E2E2">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="50dp"
+            android:foregroundGravity="center"
+            android:layout_height="40dp"
+            android:src="@drawable/back_arrow">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:text="@string/levels"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/mainAchievement"
+            android:background="@color/bottom_navigation"
+            android:src="@drawable/threek">
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/mainAchievementText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/level_1"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="378dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="326dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/stepsUntilNextLvl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="3000"
+                android:textSize="20sp">
+            </TextView>
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="4dp">
+            </Space>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_steps_to_reach_level"
+                android:textSize="20sp">
+            </TextView>
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="4dp">
+            </Space>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/lvlText"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/three"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@color/bottom_navigation"
+                    android:src="@drawable/threek">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/level_2"
+                    android:textSize="15sp">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/seven"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/bottom_navigation"
+                    android:src="@drawable/sevenk">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/level_3"
+                    android:textSize="15sp">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ten"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@color/bottom_navigation"
+                    android:src="@drawable/tenk">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/level_4"
+                    android:textSize="15sp">
+                </TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/fourteen"
+                    android:src="@drawable/fourteenk"
+                    android:background="@color/bottom_navigation">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_5"
+                    android:layout_marginStart="40dp"
+                    android:textSize="15sp">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/twenty"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/bottom_navigation"
+                    android:src="@drawable/twentyk">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_6"
+                    android:layout_marginStart="60dp"
+                    android:textSize="15sp">
+                </TextView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/thirty"
+                    android:src="@drawable/thirtyk"
+                    android:background="@color/bottom_navigation">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_7"
+                    android:layout_marginStart="60dp"
+                    android:textSize="15sp">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/fourty"
+                    android:src="@drawable/fourtyk"
+                    android:background="@color/bottom_navigation">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_8"
+                    android:layout_marginStart="60dp"
+                    android:textSize="15sp">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/sixty"
+                    android:src="@drawable/sixtyk"
+                    android:background="@color/bottom_navigation">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_9"
+                    android:layout_marginStart="60dp"
+                    android:textSize="15sp">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
