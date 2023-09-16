@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import org.eazegraph.lib.charts.BarChart;
 import org.eazegraph.lib.charts.PieChart;
@@ -41,11 +42,13 @@ public class Home extends Fragment implements SensorEventListener {
     private boolean showSteps = true;
     private TextView stepsView, totalView, averageView, calories, stepsLeft;
     private ImageView levels;
+    private StepDataViewModel stepDataViewModel;
     public static NumberFormat format = NumberFormat.getInstance(Locale.getDefault());
 
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        stepDataViewModel = new ViewModelProvider(requireActivity()).get(StepDataViewModel.class);
         setHasOptionsMenu(true);
         if(Build.VERSION.SDK_INT>=26){
             Wrapper.startForegroundService(getActivity(),new Intent(getActivity(), SensorListener.class));
@@ -66,9 +69,9 @@ public class Home extends Fragment implements SensorEventListener {
         SensorManager sm = (SensorManager) getActivity().getSystemService(Context.SENSOR_SERVICE);
         Sensor sensor = sm.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
         if (sensor == null) { //comment this out for UI testing
-            new AlertDialog.Builder(getActivity()).setTitle(R.string.sensor_not_found)
-                    .setMessage(R.string.sensor_notice)
-                    .setOnDismissListener(dialogInterface -> getActivity().finish()).setNeutralButton(android.R.string.ok, (dialogInterface, i) -> dialogInterface.dismiss()).create().show();
+//            new AlertDialog.Builder(getActivity()).setTitle(R.string.sensor_not_found)
+//                    .setMessage(R.string.sensor_notice)
+//                    .setOnDismissListener(dialogInterface -> getActivity().finish()).setNeutralButton(android.R.string.ok, (dialogInterface, i) -> dialogInterface.dismiss()).create().show();
         } else {
             sm.registerListener(this, sensor, SensorManager.SENSOR_DELAY_UI, 0);
         }
@@ -334,6 +337,7 @@ public class Home extends Fragment implements SensorEventListener {
             db.close();
         }
         boot = (int)event.values[0];
+        stepDataViewModel.setTotalSteps(boot);
         updatePie();
     }
     @Override

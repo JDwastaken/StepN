@@ -48,21 +48,23 @@ public class Database extends SQLiteOpenHelper {
         }
     }
     public void insertNewDay(long date, int steps) {
-        getWritableDatabase().beginTransaction();
-        try {
-            Cursor c = getReadableDatabase().query(DB_NAME, new String[]{"date"}, "date = ?",
-                    new String[]{String.valueOf(date)}, null, null, null);
-            if (c.getCount() == 0 && steps >= 0) {
-                addToLastEntry(steps);
-                ContentValues values = new ContentValues();
-                values.put("date", date);
-                values.put("steps", -steps);
-                getWritableDatabase().insert(DB_NAME, null, values);
+        if (steps >= 0) {
+            getWritableDatabase().beginTransaction();
+            try {
+                Cursor c = getReadableDatabase().query(DB_NAME, new String[]{"date"}, "date = ?",
+                        new String[]{String.valueOf(date)}, null, null, null);
+                if (c.getCount() == 0 && steps >= 0) {
+                    addToLastEntry(steps);
+                    ContentValues values = new ContentValues();
+                    values.put("date", date);
+                    values.put("steps", -steps);
+                    getWritableDatabase().insert(DB_NAME, null, values);
+                }
+                c.close();
+                getWritableDatabase().setTransactionSuccessful();
+            } finally {
+                getWritableDatabase().endTransaction();
             }
-            c.close();
-            getWritableDatabase().setTransactionSuccessful();
-        } finally {
-            getWritableDatabase().endTransaction();
         }
     }
     public void addToLastEntry(int steps) {
